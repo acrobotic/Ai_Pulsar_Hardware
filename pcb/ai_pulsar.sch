@@ -15428,7 +15428,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST-3-MALE" prefix="J" uservalue="yes">
+<deviceset name="JST-3-MALE" prefix="J">
 <gates>
 <gate name="G$1" symbol="JST-3P-MALE" x="0" y="0"/>
 </gates>
@@ -16170,9 +16170,9 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="U$4" library="Ai_Power" deviceset="5V" device=""/>
 <part name="U$7" library="Ai_Power" deviceset="5V" device=""/>
 <part name="U$11" library="Ai_Power" deviceset="5V" device=""/>
-<part name="3V-BATT" library="Ai_Connectors" deviceset="CR1220" device="SMT"/>
+<part name="3V-BATT" library="Ai_Connectors" deviceset="CR1220" device="SMT" value="CR1220"/>
 <part name="IC1" library="Ai_IC" deviceset="DS1307" device="SO8-TIGHT"/>
-<part name="J1" library="Ai_Connectors" deviceset="JST-3-MALE" device=""/>
+<part name="J1" library="Ai_Connectors" deviceset="JST-3-MALE" device="" value=""/>
 <part name="-" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="+" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="D" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
@@ -16184,9 +16184,9 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="R4" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
 <part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
 <part name="U$2" library="Ai_Power" deviceset="5V" device=""/>
-<part name="XL1" library="Ai_FrequencyControl" deviceset="CRYSTAL" device="CYL-2X6MM-SMT"/>
+<part name="XL1" library="Ai_FrequencyControl" deviceset="CRYSTAL" device="CYL-2X6MM-SMT" value="CMR200T"/>
 <part name="U$3" library="Ai_Power" deviceset="3V3" device=""/>
-<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY" device="SMA-403D"/>
+<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY" device="SOD-523" value="PMEG2010AEB"/>
 </parts>
 <sheets>
 <sheet>
@@ -16623,6 +16623,17 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,177.8,60.96,1,5V,,,,"/>
+<approved hash="102,1,177.8,58.42,2,D,,,,"/>
+<approved hash="102,1,177.8,55.88,3,GND,,,,"/>
+<approved hash="104,1,166.37,114.3,IC3,VCC,5V,,,"/>
+<approved hash="202,1,120.65,92.71,U1,BYP,,,,"/>
+<approved hash="106,1,85.09,152.4,3V3IO3,,,,,"/>
+<approved hash="106,1,85.09,149.86,3V3IO4,,,,,"/>
+<approved hash="106,1,176.53,148.59,CTS,,,,,"/>
+<approved hash="106,1,128.27,149.86,FACTORY,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
