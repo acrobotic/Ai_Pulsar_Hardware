@@ -166,6 +166,12 @@
 <text x="28.5496" y="8.8646" size="1.016" layer="25" font="vector" ratio="10" rot="SR55">D</text>
 <text x="17.653" y="3.175" size="1.27" layer="25" font="vector" ratio="10" rot="SR270">+</text>
 <text x="9.271" y="28.956" size="1.27" layer="25" font="vector" ratio="10" rot="SR180">-</text>
+<text x="29.8704" y="16.6624" size="0.7112" layer="25" font="vector" ratio="10" rot="R90">v1.0</text>
+<text x="3.7084" y="10.7696" size="0.508" layer="25" font="vector" ratio="10" rot="R48.5">DTR</text>
+<text x="4.7244" y="5.7404" size="0.508" layer="25" font="vector" ratio="10" rot="R138.5">RXD</text>
+<text x="6.5024" y="4.2164" size="0.508" layer="25" font="vector" ratio="10" rot="R138.5">TXD</text>
+<text x="8.5344" y="2.4384" size="0.508" layer="25" font="vector" ratio="10" rot="R138.5">CTS</text>
+<text x="12.5476" y="2.1844" size="0.508" layer="25" font="vector" ratio="10" rot="R228.5">GND</text>
 </plain>
 <libraries>
 <library name="Ai_Miscellany">
