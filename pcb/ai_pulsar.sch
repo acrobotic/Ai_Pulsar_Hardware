@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -16159,12 +16159,12 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="GND1" library="Ai_Power" deviceset="GND" device=""/>
 <part name="R1" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
 <part name="R2" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
-<part name="C1" library="Ai_Passives" deviceset="CAP" device="0603" value="0.01uF"/>
+<part name="C1" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="GND5" library="Ai_Power" deviceset="GND" device=""/>
 <part name="U$1" library="Ai_Power" deviceset="3V3" device=""/>
 <part name="GND4" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND8" library="Ai_Power" deviceset="GND" device=""/>
-<part name="IC3" library="Ai_IC" deviceset="74HCT245" device="MTC"/>
+<part name="IC2" library="Ai_IC" deviceset="74HCT245" device="MTC"/>
 <part name="GND11" library="Ai_Power" deviceset="GND" device=""/>
 <part name="U$10" library="Ai_Power" deviceset="5V" device=""/>
 <part name="U$4" library="Ai_Power" deviceset="5V" device=""/>
@@ -16213,7 +16213,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <instance part="U$1" gate="G$1" x="133.35" y="168.91"/>
 <instance part="GND4" gate="GND" x="106.68" y="123.19"/>
 <instance part="GND8" gate="GND" x="194.31" y="83.82"/>
-<instance part="IC3" gate="74HCT245" x="179.07" y="101.6"/>
+<instance part="IC2" gate="74HCT245" x="179.07" y="101.6"/>
 <instance part="GND11" gate="GND" x="181.61" y="50.8"/>
 <instance part="U$10" gate="G$1" x="180.34" y="63.5"/>
 <instance part="U$4" gate="G$1" x="96.52" y="105.41"/>
@@ -16276,11 +16276,11 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <wire x1="101.6" y1="92.71" x2="102.87" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="74HCT245" pin="VCC"/>
+<pinref part="IC2" gate="74HCT245" pin="VCC"/>
 <wire x1="166.37" y1="114.3" x2="163.83" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="5V"/>
 <wire x1="163.83" y1="114.3" x2="163.83" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="74HCT245" pin="DIR"/>
+<pinref part="IC2" gate="74HCT245" pin="DIR"/>
 <wire x1="166.37" y1="111.76" x2="163.83" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="163.83" y1="111.76" x2="163.83" y2="114.3" width="0.1524" layer="91"/>
 <junction x="163.83" y="114.3"/>
@@ -16352,11 +16352,11 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <junction x="82.55" y="160.02"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="74HCT245" pin="GND"/>
+<pinref part="IC2" gate="74HCT245" pin="GND"/>
 <wire x1="191.77" y1="88.9" x2="194.31" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
 <wire x1="194.31" y1="88.9" x2="194.31" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="74HCT245" pin="!OE"/>
+<pinref part="IC2" gate="74HCT245" pin="!OE"/>
 <wire x1="191.77" y1="91.44" x2="194.31" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="194.31" y1="91.44" x2="194.31" y2="88.9" width="0.1524" layer="91"/>
 <junction x="194.31" y="88.9"/>
@@ -16481,7 +16481,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <label x="82.55" y="154.94" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="74HCT245" pin="A1"/>
+<pinref part="IC2" gate="74HCT245" pin="A1"/>
 <wire x1="166.37" y1="106.68" x2="163.83" y2="106.68" width="0.1524" layer="91"/>
 <label x="163.83" y="106.68" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
@@ -16534,7 +16534,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 </net>
 <net name="5VIO2" class="0">
 <segment>
-<pinref part="IC3" gate="74HCT245" pin="B1"/>
+<pinref part="IC2" gate="74HCT245" pin="B1"/>
 <wire x1="191.77" y1="114.3" x2="194.31" y2="114.3" width="0.1524" layer="91"/>
 <label x="194.31" y="114.3" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
