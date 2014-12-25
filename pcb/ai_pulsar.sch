@@ -11588,7 +11588,7 @@ chip</description>
 <wire x1="5" y1="0.5" x2="5" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="5" y1="-3.5" x2="4.15" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="4.15" y1="-3.5" x2="4.15" y2="-1" width="0.2032" layer="21"/>
-<wire x1="4.15" y1="-1" x2="0.75" y2="-1" width="0.2032" layer="21"/>
+<wire x1="4.15" y1="-1" x2="2.75" y2="-1" width="0.2032" layer="21"/>
 <wire x1="-2.75" y1="-1" x2="-4.15" y2="-1" width="0.2032" layer="21"/>
 <wire x1="-4.15" y1="-1" x2="-4.15" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="-4.15" y1="-3.5" x2="-5" y2="-3.5" width="0.2032" layer="21"/>
@@ -11816,7 +11816,7 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST-3-MALE" prefix="J">
+<deviceset name="JST-3P-MALE" prefix="J">
 <gates>
 <gate name="G$1" symbol="JST-3P-MALE" x="0" y="0"/>
 </gates>
@@ -12584,7 +12584,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="U$7" library="Ai_Power" deviceset="5V" device=""/>
 <part name="U$11" library="Ai_Power" deviceset="5V" device=""/>
 <part name="IC1" library="Ai_IC" deviceset="DS1307" device="SO8-TIGHT"/>
-<part name="J1" library="Ai_Connectors" deviceset="JST-3-MALE" device="" value="JST-3-MALE"/>
+<part name="J1" library="Ai_Connectors" deviceset="JST-3P-MALE" device="" value="JST-3P-MALE"/>
 <part name="-" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="+" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="D" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>

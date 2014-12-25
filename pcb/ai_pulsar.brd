@@ -293,7 +293,7 @@ connected internally.</text>
 <wire x1="5" y1="0.5" x2="5" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="5" y1="-3.5" x2="4.15" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="4.15" y1="-3.5" x2="4.15" y2="-1" width="0.2032" layer="21"/>
-<wire x1="4.15" y1="-1" x2="0.75" y2="-1" width="0.2032" layer="21"/>
+<wire x1="4.15" y1="-1" x2="2.75" y2="-1" width="0.2032" layer="21"/>
 <wire x1="-2.75" y1="-1" x2="-4.15" y2="-1" width="0.2032" layer="21"/>
 <wire x1="-4.15" y1="-1" x2="-4.15" y2="-3.5" width="0.2032" layer="21"/>
 <wire x1="-4.15" y1="-3.5" x2="-5" y2="-3.5" width="0.2032" layer="21"/>
@@ -782,7 +782,7 @@ design rules under a new name.</description>
 <element name="IC1" library="Ai_IC" package="SO08-TIGHT" value="DS1307SO8-TIGHT" x="19.431" y="6.731" smashed="yes" rot="MR312">
 <attribute name="NAME" x="22.70684375" y="7.712009375" size="0.8128" layer="26" ratio="10" rot="MR42"/>
 </element>
-<element name="J1" library="Ai_Connectors" package="JST-3P-SMD" value="JST-3-MALE" x="25.0952" y="15.24" smashed="yes" rot="MR90"/>
+<element name="J1" library="Ai_Connectors" package="JST-3P-SMD" value="JST-3P-MALE" x="25.0952" y="15.24" smashed="yes" rot="MR90"/>
 <element name="-" library="Ai_Connectors" package="1X01-PETAL" value="1X01-PETAL" x="6.985" y="25.4" smashed="yes" rot="R40"/>
 <element name="+" library="Ai_Connectors" package="1X01-PETAL" value="1X01-PETAL" x="15.494" y="2.032" smashed="yes" rot="R180"/>
 <element name="D" library="Ai_Connectors" package="1X01-PETAL" value="1X01-PETAL" x="25.781" y="7.62" smashed="yes" rot="R235"/>
