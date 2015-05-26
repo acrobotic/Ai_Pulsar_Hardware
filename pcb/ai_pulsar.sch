@@ -50,6 +50,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -11212,14 +11213,7 @@ Standard 8.5x11 US Letter frame</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC5205-*" prefix="U">
-<description>&lt;b&gt;Fixed-Voltage Regulator&lt;/b&gt;
-&lt;p&gt;
-Standard voltage regulator in SOT23-5 layout. Micrel part MIC5205x.x where x.x designates the output voltage (e.g., 3.3). BYP pin is used to lower output noise with 470pF cap.
-&lt;/p&gt;
-&lt;p&gt;
-Haven't tested the footprint on an actual board yet!
-&lt;/p&gt;</description>
+<deviceset name="MIC5219-*" prefix="U">
 <gates>
 <gate name="G$1" symbol="VREG" x="0" y="0"/>
 </gates>
@@ -11374,6 +11368,66 @@ chip</description>
 <rectangle x1="0.45" y1="-0.6762" x2="1" y2="0.6762" layer="51"/>
 <wire x1="0" y1="-0.0305" x2="0" y2="0.0305" width="0.5588" layer="21"/>
 </package>
+<package name="CAP-POL-EIA3216">
+<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0.127" layer="21"/>
+<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="CAP-POL-025X50">
+<description>&lt;h3&gt;Polarized Capacitor&lt;/h3&gt;
+
+&lt;p&gt;
+2.5mm lead spacing, 5mm radius.
+&lt;/p&gt;</description>
+<wire x1="-0.762" y1="1.397" x2="-1.778" y2="1.397" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="21"/>
+<pad name="A" x="1.27" y="0" drill="0.7" diameter="1.651"/>
+<pad name="C" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
+<text x="-3.175" y="-4.445" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="CAP-PANASONIC-C">
+<wire x1="-2.6" y1="2.6" x2="1.25" y2="2.6" width="0.1016" layer="51"/>
+<wire x1="1.25" y1="2.6" x2="2.6" y2="1.25" width="0.1016" layer="51"/>
+<wire x1="2.6" y1="1.25" x2="2.6" y2="-1.25" width="0.1016" layer="51"/>
+<wire x1="2.6" y1="-1.25" x2="1.25" y2="-2.6" width="0.1016" layer="51"/>
+<wire x1="1.25" y1="-2.6" x2="-2.6" y2="-2.6" width="0.1016" layer="51"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.1016" layer="51"/>
+<wire x1="-2.6" y1="0.95" x2="-2.6" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="2.6" x2="1.25" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="2.6" x2="2.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="1.25" x2="2.6" y2="0.95" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-0.95" x2="2.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-1.25" x2="1.25" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="-2.6" x2="-2.6" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="-0.95" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="0.85" x2="2.3" y2="0.85" width="0.2032" layer="21" curve="-139.434882" cap="flat"/>
+<wire x1="-2.3" y1="-0.85" x2="2.3" y2="-0.85" width="0.2032" layer="21" curve="139.434882" cap="flat"/>
+<wire x1="-1.55" y1="1.85" x2="-1.55" y2="-1.85" width="0.1016" layer="51"/>
+<circle x="0" y="0" radius="2.45" width="0.1016" layer="51"/>
+<smd name="C" x="-2.05" y="0" dx="2.6" dy="1.4" layer="1"/>
+<smd name="A" x="2.05" y="0" dx="2.6" dy="1.4" layer="1"/>
+<rectangle x1="-2.95" y1="-0.35" x2="-2.4" y2="0.35" layer="51"/>
+<rectangle x1="2.4" y1="-0.35" x2="2.95" y2="0.35" layer="51"/>
+<polygon width="0.1016" layer="51">
+<vertex x="-1.6" y="1.8"/>
+<vertex x="-2" y="1.35"/>
+<vertex x="-2.25" y="0.75"/>
+<vertex x="-2.45" y="0.05"/>
+<vertex x="-2.25" y="-0.75"/>
+<vertex x="-1.95" y="-1.35"/>
+<vertex x="-1.6" y="-1.8"/>
+</polygon>
+<text x="-2.54" y="3.175" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -11400,6 +11454,20 @@ chip</description>
 <rectangle x1="-2.032" y1="0.889" x2="2.032" y2="1.397" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="CAP-POL">
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.4064" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.4064" layer="94" curve="-37.376341" cap="flat"/>
+<text x="-0.381" y="-4.572" size="1.524" layer="95" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.032" y="1.651" size="1.524" layer="96" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="1.938" x2="-1.364" y2="2.065" layer="94"/>
+<rectangle x1="-1.872" y1="1.557" x2="-1.745" y2="2.446" layer="94"/>
+<pin name="A" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11492,6 +11560,44 @@ chip</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP-POL" prefix="C" uservalue="yes">
+<description>&lt;h3&gt;Polarized Capacitor&lt;/h3&gt;
+&lt;p&gt;
+ Normally 10uF, 47uF, and 100uF in electrolytic and tantalum varieties.
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP-POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="EIA3216" package="CAP-POL-EIA3216">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="025X50" package="CAP-POL-025X50">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PANASONIC-C" package="CAP-PANASONIC-C">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11709,6 +11815,14 @@ chip</description>
 <pad name="+2" x="6.604" y="0" drill="2" diameter="3.175"/>
 <text x="-3.048" y="5.348" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
+<package name="1X05-NOSILK">
+<pad name="1" x="-5.08" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
+<pad name="2" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-6.35" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<pad name="5" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -11722,9 +11836,9 @@ chip</description>
 <pin name="GND" x="-6.35" y="-3.81" visible="pad" length="short"/>
 </symbol>
 <symbol name="JST-3P-MALE">
-<pin name="1" x="-2.54" y="-5.08" visible="pad" length="short" direction="sup" rot="R90"/>
-<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="sup" rot="R90"/>
-<pin name="3" x="2.54" y="-5.08" visible="pad" length="short" direction="sup" rot="R90"/>
+<pin name="1" x="-2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="2" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="3" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-0.762" x2="-5.08" y2="0.762" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="0.762" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
@@ -11866,6 +11980,18 @@ chip</description>
 </technologies>
 </device>
 <device name="" package="1X05">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NOSILK" package="1X05-NOSILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12171,8 +12297,25 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
 <rectangle x1="-2.032" y1="-4.1275" x2="-1.778" y2="-3.4925" layer="21" rot="R90"/>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+</package>
 <package name="SO08">
-<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
 <wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
 <wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
 <wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
@@ -12195,24 +12338,6 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
 <rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
 <rectangle x1="-2.032" y1="-4.3815" x2="-1.778" y2="-3.7465" layer="21" rot="R90"/>
-</package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -12498,6 +12623,25 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
 <text x="-2.54" y="1.778" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
+<package name="SMC">
+<wire x1="3.5" y1="-3" x2="-3.5" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3" x2="-3.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3" x2="3.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3" x2="-3.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="-0.543" y1="-1" x2="0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.83" y1="0" x2="-0.543" y2="1" width="0.2032" layer="21"/>
+<wire x1="-0.543" y1="1" x2="-0.543" y2="-1" width="0.2032" layer="21"/>
+<smd name="C" x="3.302" y="0" dx="1.778" dy="3.175" layer="1" rot="R180"/>
+<smd name="A" x="-3.302" y="0" dx="1.778" dy="3.175" layer="1" rot="R180"/>
+<text x="-3.556" y="3.429" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="3.5" y1="-1.5" x2="4" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-4" y1="-1.5" x2="-3.5" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="1.3" y1="-3" x2="1.7" y2="3" layer="21" rot="R180"/>
+<wire x1="3.5" y1="-3" x2="3.5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3" x2="3.5" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="3" x2="-3.5" y2="2" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE-SCHOTTKY">
@@ -12539,6 +12683,15 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMC" package="SMC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -12557,7 +12710,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
-<attribute name="REV" value="1.1"/>
+<attribute name="REV" value="1.2"/>
 </part>
 <part name="C2" library="Ai_Passives" deviceset="CAP" device="0603" value="10uF"/>
 <part name="U$8" library="Ai_Power" deviceset="3V3" device=""/>
@@ -12588,7 +12741,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="-" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="+" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
 <part name="D" library="Ai_Connectors" deviceset="1X01-PETAL" device=""/>
-<part name="U1" library="Ai_Power" deviceset="MIC5205-*" device="" technology="3.3"/>
+<part name="U1" library="Ai_Power" deviceset="MIC5219-*" device="" technology="3.3"/>
 <part name="J2" library="Ai_Connectors" deviceset="1X05" device=""/>
 <part name="GND2" library="Ai_Power" deviceset="GND" device=""/>
 <part name="R5" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
@@ -12598,9 +12751,10 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <part name="U$2" library="Ai_Power" deviceset="5V" device=""/>
 <part name="XL1" library="Ai_FrequencyControl" deviceset="CRYSTAL" device="CYL-2X6MM-SMT" value="CMR200T"/>
 <part name="U$3" library="Ai_Power" deviceset="3V3" device=""/>
-<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY" device="SOD-523" value="PMEG2010AEB"/>
+<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY" device="SMA-403D" value="PMEG2010AEB"/>
 <part name="U$5" library="Ai_Power" deviceset="5V" device=""/>
 <part name="3V-BATT" library="Ai_Connectors" deviceset="CR1220" device="SMT" value="CR1220"/>
+<part name="C5" library="Ai_Passives" deviceset="CAP-POL" device="EIA3216" value="100uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12619,7 +12773,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <instance part="GND7" gate="GND" x="96.52" y="85.09"/>
 <instance part="U$6" gate="G$1" x="139.7" y="15.24"/>
 <instance part="RFDUINO" gate="G$1" x="106.68" y="147.32"/>
-<instance part="GND1" gate="GND" x="59.69" y="90.17"/>
+<instance part="GND1" gate="GND" x="59.69" y="82.55"/>
 <instance part="R1" gate="G$1" x="187.96" y="153.67" rot="R180"/>
 <instance part="R2" gate="G$1" x="185.42" y="151.13" rot="R180"/>
 <instance part="C1" gate="G$1" x="191.77" y="156.21" rot="R270"/>
@@ -12654,6 +12808,10 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <attribute name="NAME" x="121.158" y="58.674" size="1.524" layer="95" font="vector" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="119.38" y="51.562" size="1.524" layer="96" font="vector" ratio="10" rot="MR0"/>
 </instance>
+<instance part="C5" gate="G$1" x="67.31" y="93.98" smashed="yes">
+<attribute name="NAME" x="66.929" y="89.408" size="1.524" layer="95" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="70.358" y="97.409" size="1.524" layer="96" font="vector" ratio="10" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12664,6 +12822,9 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <pinref part="U$11" gate="G$1" pin="5V"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="64.77" y1="102.87" x2="67.31" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="A"/>
+<wire x1="67.31" y1="99.06" x2="67.31" y2="102.87" width="0.1524" layer="91"/>
+<junction x="67.31" y="102.87"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="5V"/>
@@ -12789,7 +12950,12 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <pinref part="USB1" gate="G$1" pin="GND"/>
 <wire x1="57.15" y1="95.25" x2="59.69" y2="95.25" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
-<wire x1="59.69" y1="95.25" x2="59.69" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="95.25" x2="59.69" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="C"/>
+<wire x1="59.69" y1="86.36" x2="59.69" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="86.36" x2="67.31" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="86.36" x2="67.31" y2="88.9" width="0.1524" layer="91"/>
+<junction x="59.69" y="86.36"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="GND" pin="GND"/>
@@ -13041,11 +13207,10 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <approved hash="102,1,177.8,60.96,1,5V,,,,"/>
 <approved hash="102,1,177.8,58.42,2,D,,,,"/>
 <approved hash="102,1,177.8,55.88,3,GND,,,,"/>
-<approved hash="104,1,166.37,114.3,IC3,VCC,5V,,,"/>
+<approved hash="104,1,166.37,114.3,IC2,VCC,5V,,,"/>
 <approved hash="202,1,120.65,92.71,U1,BYP,,,,"/>
 <approved hash="106,1,85.09,152.4,3V3IO3,,,,,"/>
 <approved hash="106,1,85.09,149.86,3V3IO4,,,,,"/>
-<approved hash="106,1,176.53,148.59,CTS,,,,,"/>
 <approved hash="106,1,128.27,149.86,FACTORY,,,,,"/>
 </errors>
 </schematic>
