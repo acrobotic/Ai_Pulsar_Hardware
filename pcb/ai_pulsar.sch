@@ -10120,8 +10120,8 @@ chip</description>
 <circle x="-6.15" y="0" radius="0.785" width="0.127" layer="21"/>
 <circle x="6.15" y="0.154" radius="0.785" width="0.127" layer="21"/>
 <smd name="-" x="0" y="0" dx="4" dy="4" layer="1"/>
-<smd name="+@1" x="-6.75" y="0" dx="3.5" dy="5" layer="1"/>
-<smd name="+@2" x="6.75" y="0" dx="3.5" dy="5" layer="1"/>
+<smd name="+@1" x="-6.75" y="0" dx="3.5" dy="4" layer="1"/>
+<smd name="+@2" x="6.75" y="0" dx="3.5" dy="4" layer="1"/>
 <text x="-2.54" y="4.169" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="4.55" y1="4.305" x2="-4.55" y2="4.305" width="0.127" layer="21" curve="-114.884484"/>
 <wire x1="-5.3" y1="4.305" x2="-4.55" y2="4.305" width="0.127" layer="21" curve="-106.260205"/>
@@ -11319,7 +11319,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="LED22" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
 <part name="LED23" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
 <part name="LED24" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
-<part name="C4" library="Ai_Passives" deviceset="CAP" device="0603"/>
+<part name="C4" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="R10" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
 <part name="U2" library="Ai_IC" deviceset="FT231X" device="-Q"/>
 <part name="J2" library="Ai_Connectors" deviceset="JST-2P-MALE" device=""/>
@@ -11329,7 +11329,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="C7" library="Ai_Passives" deviceset="CAP" device="0603"/>
 <part name="R9" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
 <part name="R8" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
-<part name="C5" library="Ai_Passives" deviceset="CAP" device="0603"/>
+<part name="C5" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="LED25" library="Ai_LED" deviceset="LED" device="0603"/>
 <part name="LED26" library="Ai_LED" deviceset="LED" device="0603"/>
 <part name="C6" library="Ai_Passives" deviceset="CAP" device="0603"/>
