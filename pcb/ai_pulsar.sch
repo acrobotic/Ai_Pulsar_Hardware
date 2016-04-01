@@ -10914,14 +10914,14 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <circle x="0" y="0" radius="0.127" width="0.4064" layer="94"/>
 <text x="0.635" y="1.905" size="1.524" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-3.175" size="1.524" layer="96" font="vector" ratio="10">BAT54C</text>
+<text x="-3.175" y="-3.175" size="1.524" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 <pin name="A1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="A2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="CC" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-SCHOTTKY-DUAL" prefix="D">
+<deviceset name="DIODE-SCHOTTKY-DUAL" prefix="D" uservalue="yes">
 <description>&lt;b&gt;Schottky Diodes&lt;/b&gt;&lt;p&gt;
 Source: Fairchild .. BAT54.pdf</description>
 <gates>
@@ -11267,7 +11267,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
-<attribute name="REV" value="1.4"/>
+<attribute name="REV" value="1.5"/>
 </part>
 <part name="C1" library="Ai_Passives" deviceset="CAP" device="0603" value="10uF"/>
 <part name="U$8" library="Ai_Power" deviceset="3V3" device=""/>
@@ -11289,10 +11289,10 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="J1" library="Ai_Connectors" deviceset="JST-3P-MALE" device="" value="JST-3P-MALE"/>
 <part name="U1" library="Ai_Power" deviceset="MIC5219-*" device="" technology="3.3"/>
 <part name="GND2" library="Ai_Power" deviceset="GND" device=""/>
-<part name="R7" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
+<part name="R5" library="Ai_Passives" deviceset="RES" device="0603" value="100"/>
 <part name="R4" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
 <part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
-<part name="XL1" library="Ai_FrequencyControl" deviceset="CRYSTAL" device="SMD" value="CMR200T"/>
+<part name="XL1" library="Ai_FrequencyControl" deviceset="CRYSTAL" device="SMD" value="MC146"/>
 <part name="U$3" library="Ai_Power" deviceset="3V3" device=""/>
 <part name="3V-BATT" library="Ai_Connectors" deviceset="CR1025" device="" value="CR1025"/>
 <part name="LED1" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
@@ -11320,15 +11320,15 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="LED23" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
 <part name="LED24" library="Ai_LED" deviceset="LED-WS2812B" device="-SM"/>
 <part name="C4" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
-<part name="R10" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
+<part name="R8" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
 <part name="U2" library="Ai_IC" deviceset="FT231X" device="-Q"/>
 <part name="J2" library="Ai_Connectors" deviceset="JST-2P-MALE" device=""/>
 <part name="R1" library="Ai_Passives" deviceset="RES" device="0603" value="22"/>
 <part name="R2" library="Ai_Passives" deviceset="RES" device="0603" value="22"/>
 <part name="GND3" library="Ai_Power" deviceset="GND" device=""/>
 <part name="C7" library="Ai_Passives" deviceset="CAP" device="0603"/>
-<part name="R9" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
-<part name="R8" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
+<part name="R7" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
+<part name="R6" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
 <part name="C5" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="LED25" library="Ai_LED" deviceset="LED" device="0603"/>
 <part name="LED26" library="Ai_LED" deviceset="LED" device="0603"/>
@@ -11364,12 +11364,12 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="RNG" library="Ai_Connectors" deviceset="1X02-SJ-NC" device=""/>
 <part name="GND6" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND8" library="Ai_Power" deviceset="GND" device=""/>
-<part name="R11" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
+<part name="R9" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
 <part name="GND10" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND12" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND13" library="Ai_Power" deviceset="GND" device=""/>
 <part name="U$17" library="Ai_Power" deviceset="VBAT" device=""/>
-<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY-DUAL" device=""/>
+<part name="D1" library="Ai_DiscreteSemis" deviceset="DIODE-SCHOTTKY-DUAL" device="" value="PMEG4005CT"/>
 <part name="U$18" library="Ai_Power" deviceset="5V" device=""/>
 <part name="U$19" library="Ai_Power" deviceset="VBAT" device=""/>
 <part name="VCC1" library="Ai_Power" deviceset="VCC" device=""/>
@@ -11408,7 +11408,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="J1" gate="G$1" x="6.35" y="135.89" rot="MR270"/>
 <instance part="U1" gate="G$1" x="83.82" y="96.52"/>
 <instance part="GND2" gate="GND" x="58.42" y="33.02"/>
-<instance part="R7" gate="G$1" x="24.13" y="149.86"/>
+<instance part="R5" gate="G$1" x="24.13" y="149.86"/>
 <instance part="R4" gate="G$1" x="17.78" y="53.34" rot="R270"/>
 <instance part="R3" gate="G$1" x="15.24" y="53.34" rot="R270"/>
 <instance part="XL1" gate="G$1" x="46.99" y="50.8" rot="MR90"/>
@@ -11442,15 +11442,15 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="LED23" gate="G$1" x="228.6" y="156.21"/>
 <instance part="LED24" gate="G$1" x="228.6" y="173.99"/>
 <instance part="C4" gate="G$1" x="81.28" y="25.4" rot="R180"/>
-<instance part="R10" gate="G$1" x="127" y="35.56" rot="R90"/>
+<instance part="R8" gate="G$1" x="127" y="35.56" rot="R90"/>
 <instance part="U2" gate="G$1" x="104.14" y="39.37"/>
 <instance part="J2" gate="G$1" x="10.16" y="85.09" rot="R90"/>
 <instance part="R1" gate="G$1" x="33.02" y="107.95" rot="MR0"/>
 <instance part="R2" gate="G$1" x="33.02" y="105.41" rot="MR0"/>
 <instance part="GND3" gate="GND" x="104.14" y="8.89"/>
 <instance part="C7" gate="G$1" x="170.18" y="59.69" rot="R180"/>
-<instance part="R9" gate="G$1" x="139.7" y="52.07"/>
-<instance part="R8" gate="G$1" x="139.7" y="54.61"/>
+<instance part="R7" gate="G$1" x="139.7" y="52.07"/>
+<instance part="R6" gate="G$1" x="139.7" y="54.61"/>
 <instance part="C5" gate="G$1" x="139.7" y="44.45" rot="R270"/>
 <instance part="LED25" gate="G$1" x="119.38" y="60.96" rot="R90"/>
 <instance part="LED26" gate="G$1" x="125.73" y="64.77" rot="R90"/>
@@ -11486,7 +11486,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="RNG" gate="G$1" x="110.49" y="177.8" rot="R180"/>
 <instance part="GND6" gate="GND" x="146.05" y="74.93"/>
 <instance part="GND8" gate="GND" x="167.64" y="49.53"/>
-<instance part="R11" gate="G$1" x="132.08" y="35.56" rot="R90"/>
+<instance part="R9" gate="G$1" x="132.08" y="35.56" rot="R90"/>
 <instance part="GND10" gate="GND" x="167.64" y="25.4"/>
 <instance part="GND12" gate="GND" x="212.09" y="74.93"/>
 <instance part="GND13" gate="GND" x="17.78" y="78.74"/>
@@ -11863,7 +11863,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <segment>
 <wire x1="144.78" y1="54.61" x2="147.32" y2="54.61" width="0.1524" layer="91"/>
 <label x="147.32" y="54.61" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="3V3RXD" class="0">
@@ -11875,7 +11875,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <segment>
 <wire x1="144.78" y1="52.07" x2="147.32" y2="52.07" width="0.1524" layer="91"/>
 <label x="147.32" y="52.07" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="3V3IO2" class="0">
@@ -11886,7 +11886,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </segment>
 <segment>
 <wire x1="31.75" y1="149.86" x2="29.21" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <label x="31.75" y="149.86" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
@@ -11928,7 +11928,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <wire x1="11.43" y1="135.89" x2="13.97" y2="135.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="19.05" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <label x="15.24" y="149.86" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 <pinref part="STR" gate="1" pin="1"/>
@@ -12040,14 +12040,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <net name="N$7" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RXD"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="52.07" x2="124.46" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TXD"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="54.61" x2="124.46" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12072,7 +12072,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="CBUS1"/>
 <wire x1="124.46" y1="29.21" x2="127" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="127" y1="29.21" x2="127" y2="30.48" width="0.1524" layer="91"/>
@@ -12083,7 +12083,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pinref part="U2" gate="G$1" pin="CBUS2"/>
 <wire x1="124.46" y1="26.67" x2="132.08" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="26.67" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -12112,7 +12112,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <net name="N$11" class="0">
 <segment>
 <pinref part="LED26" gate="G$1" pin="C"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="130.81" y1="64.77" x2="132.08" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="64.77" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
 </segment>
@@ -12120,7 +12120,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <net name="N$12" class="0">
 <segment>
 <pinref part="LED25" gate="G$1" pin="C"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="127" y1="60.96" x2="127" y2="40.64" width="0.1524" layer="91"/>
 </segment>
